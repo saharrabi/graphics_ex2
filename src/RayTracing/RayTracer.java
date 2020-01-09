@@ -185,7 +185,6 @@ public class RayTracer {
                         shadowthing = 1 - (light.getShadow() * (1 - lighthit.getSurface().getMaterial().getTranparency()));
                     }
                     toAdd = toAdd.multiplyByScalar((float) shadowthing);
-
                 }
                 color = color.add(toAdd);
             }
